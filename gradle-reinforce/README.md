@@ -1,9 +1,9 @@
 # Android 自动加固打包插件
 
 ## 优势
-* 1, 支持多变体，可自定义多个buildType配置
+* 1，支持编译多变体，可自定义多个buildType配置（debug，release，uat..）
 * 2，支持多风味，可自定义多个productFlavor
-* 3，支持美团walle多渠道配置（提升打包效率），采用walle-cli-all.jar工具
+* 3，支持美团walle多渠道配置（提升打包效率），采用[美团Walle-cli](https://github.com/Meituan-Dianping/walle/blob/master/walle-cli/README.md)工具
 * 4，支持自定义输出apk文件名, 完全兼容variant.output.outputFileName 自定义文件名方式，加固打包会在已配置文件名上追加部分信息。
 * 5，支持加固签名后生成git提交信息到文件名上，方便追踪版本记录
   
@@ -38,7 +38,7 @@ walle.jar=reinforce/walle/walle-cli-all.jar
 # 美团channel配置文件
 walle.channel=channel
 ```
-> 配置中使用到的工具在[reinforce](reinforce)里面，自己下载拷贝粘贴（或者去官网上下载最新的
+> 配置中使用到的工具在[reinforce](reinforce/README.md)里面，自己下载拷贝粘贴（或者去官网上下载最新的
 > [360加固工具](https://jiagu.360.cn/#/global/download), [美团Walle-cli](https://github.com/Meituan-Dianping/walle/blob/master/walle-cli/README.md)）
 
 ### 2，在app/build.gradle中添加gradle远程插件依赖
