@@ -16,9 +16,9 @@
 # 360加固jar包配置，必须
 reinforce.jar=reinforce/jiagu/jiagu.jar
 # 更换为自己的360开发者账号，必须
-reinforce.account="sinoagri"
+reinforce.account="xxxx"
 # 360开发者账号密码，必须
-reinforce.password="Sinoagri8848"
+reinforce.password="xxxx"
 # 加固输出路径，（选配，默认为${project.buildDir}/outputs/reinforce）
 reinforce.outputPath=reinforceOutput
 
@@ -38,6 +38,8 @@ walle.jar=reinforce/walle/walle-cli-all.jar
 # 美团channel配置文件
 walle.channel=channel
 ```
+> 配置中使用到的工具在[reinforce](reinforce)里面，自己下载拷贝粘贴（或者去官网上下载最新的
+> [360加固工具](https://jiagu.360.cn/#/global/download), [美团Walle-cli](https://github.com/Meituan-Dianping/walle/blob/master/walle-cli/README.md)）
 
 ### 2，在app/build.gradle中添加gradle远程插件依赖
 ```gradle
