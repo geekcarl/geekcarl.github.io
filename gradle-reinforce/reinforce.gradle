@@ -105,7 +105,7 @@ static def getFlavorPath(String path, String buildType, String flavorName) {
  */
 String getAndroidSdkPath() {
     File sdkDir = android.getSdkDirectory()
-    return sdkDir.getAbsolutePath() + "/build-tools/${rootProject.ext.buildToolsVersion}/"
+    return sdkDir.getAbsolutePath() + "/build-tools/${project.android.buildToolsVersion}/"
 }
 
 /**
