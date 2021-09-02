@@ -1,12 +1,17 @@
 # Android 自动加固打包插件
 
+# 为什么要整
+* 1，基本所有Android apk上架前都需要加固，市面有很多方案，但是无法通用，所以开发个能兼容所有场景的。
+* 2，用起来方便。
+* 3，工具与插件解耦，可自行升级。
+
 ## 优势
 * 1，支持编译多变体，可自定义多个buildType配置（debug，release，uat..）
 * 2，支持多风味，可自定义多个productFlavor
 * 3，支持美团walle多渠道配置（提升打包效率），采用[美团Walle-cli](https://github.com/Meituan-Dianping/walle/blob/master/walle-cli/README.md)工具
-* 4，支持自定义输出apk文件名, 完全兼容variant.output.outputFileName 自定义文件名方式，加固打包会在已配置文件名上追加部分信息。
+* 4，支持自定义输出apk文件名, 完全兼容`variant.output.outputFileName`自定义文件名方式，加固打包会在已配置文件名上追加部分信息。
 * 5，支持加固签名后生成git提交信息到文件名上，方便追踪版本记录
-  
+
 
 ## 怎么用
 ### 1，添加配置文件[reinforce.properties](reinforce.properties) 到项目根目录
@@ -52,5 +57,3 @@ apply from: 'https://geekcarl.github.io/gradle-reinforce/reinforce.gradle'
 * 1，在项目根目录执行： `./gradlew tasks ` 
 * 2，会发现task group为 `reinforce` task list
 * 3, 执行你的目标`task`吧
-
-
