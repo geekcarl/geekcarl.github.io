@@ -1,6 +1,6 @@
 {
-    "name": "gov_info",
-    "short_name": "gov_info",
+    "name": "诸暨政务",
+    "short_name": "诸暨政务",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
